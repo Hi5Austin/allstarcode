@@ -1,4 +1,4 @@
-var sections = ['Theme','Venue','Sponsors','Audience','Finished'];
+var sections = ['Start','Theme','Venue','Sponsors','Audience','Finished'];
 var themes = ['Social Justice', 'Data Science', 'Music'];
 var audience = ['High School Students','College Students','Engineers','Business People'];
 
@@ -24,9 +24,14 @@ var myAudience;
 var sectionHTML = document.getElementById('section');
 var choicesHTML = document.getElementById('choices');
 
-sectionHTML.innerHTML = sections[sectionCounter];
-for(var i = 0; i < themes.length; i++){
-  choicesHTML.innerHTML += "<p onclick='chooseTheme(" + i + ")'>" + themes[i] + "</p>";
+
+function start(){
+  sectionCounter += 1;
+  sectionHTML.innerHTML = sections[sectionCounter];
+  choicesHTML.innerHTML = "";
+  for(var i = 0; i < themes.length; i++){
+    choicesHTML.innerHTML += "<p onclick='chooseTheme(" + i + ")'>" + themes[i] + "</p>";
+  }
 }
 
 function chooseTheme(num){
