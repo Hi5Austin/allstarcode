@@ -1,4 +1,4 @@
-var sections = ['Start','Theme','Venue','Sponsors','Audience','Finished'];
+var sections = ['Start','Theme?','Venue?','Sponsors?','Audience?','Finished?'];
 var themes = ['Social Justice', 'Data Science', 'Music'];
 var audience = ['High School Students','College Students','Engineers','Business People'];
 
