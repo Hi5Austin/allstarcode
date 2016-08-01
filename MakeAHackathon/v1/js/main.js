@@ -78,3 +78,11 @@ function chooseAudience(num){
   choicesHTML.innerHTML += "The main sponsor is " + mySponsor + "<br>";
   choicesHTML.innerHTML += "Your main audience is " + myAudience;
 }
+
+
+//to do list
+//design
+//swag, food
+//prizes, judge
+//marketing(email list/social media, eventbrite)
+//
