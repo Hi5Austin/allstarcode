@@ -49,11 +49,11 @@ function changeSection(){
   currentPictures = picData[sectionCounter];
   console.log(currentData);
   for(var i = 0; i < currentData.length; i++){
-    choicesHTML.append("<a class='choice button'>" + currentData[i] + "<a>");
+    choicesHTML.append("<a class='choice button'>" + currentData[i]);
   }
   choicesHTML.append('<br><br>');
   for(var i = 0; i < currentData.length; i++){
-    choicesHTML.append("<img class='dataImage' src='" + currentPictures[i] + "'>");
+    choicesHTML.append("<img class='dataImage' src='" + currentPictures[i] + "'></a>");
   }
   // choicesHTML.append("<br><br>");
   //  for(var i = 0; i < currentData.length; i++){
@@ -89,9 +89,9 @@ function finish(){
   sectionHTML.text("Finished");
   choicesHTML.text("");
   choicesHTML.append("You're throwing a " + myData[0] + " themed hackathon");
-  choicesHTML.append(" at " + myData[1] + "<br><br>");
-  choicesHTML.append("The main sponsor is " + myData[2]);
-  choicesHTML.append(" and the main audience is " + myData[3]);
+  choicesHTML.append(" at " + myData[1] + ",<br><br>");
+  choicesHTML.append("your main sponsor is " + myData[2]);
+  choicesHTML.append(" and your main audience is " + myData[3] + ".");
 }
 
 //to do list
